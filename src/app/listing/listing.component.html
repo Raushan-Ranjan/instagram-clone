@@ -1,0 +1,21 @@
+<div class="row m-3 card-dec">
+  <div class="col-6">
+    <button type="button" class="btn btn-light"(click)="onSort()">{{"Sort by likes in"}} {{sortBy === 'ASC' ? 'DESC': 'ASC'}}</button>
+  </div>
+</div>
+
+  <div class="row card-dec scroll-y">
+    <div class="col-6">
+        <div class="card mt-2" style="width: 18rem;" *ngFor="let item of list|sortByLike:sortBy">
+            <img [src]="item?.Image" (click)="onClickDetails(item)" class="card-img-top" alt="...">
+            <div class="card-body">
+             <span> {{item.likes}} <i class="bi bi-hand-thumbs-up-fill"></i></span>
+             <span class="figure-caption">{{item.timestamp}}</span>
+            </div>
+          </div>
+
+    </div>
+</div>
+
+
+

@@ -1,0 +1,18 @@
+<div>
+  <div class="card card-dec" *ngIf="selectedDetails">
+    <p class="h3"><em>PREVIEW</em></p>
+    <img [src]="selectedDetails?.Image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <span class="card-link">
+        <button type="button" class="btn btn-light card-link" (click)="onLikeClick(1)"> {{selectedDetails?.likes}}<i
+          class="bi bi-hand-thumbs-up-fill"></i></button></span>
+        <span class="card-link figure-caption">{{selectedDetails?.timestamp}}</span>
+    </div>
+  </div>
+
+  <div class="card no-card-dec" style="width: 24rem;" *ngIf="!selectedDetails">
+    <div class="card-body">
+      <p class="card-text"><i class="bi bi-image"></i> No post selected</p>
+    </div>
+  </div>
+</div>

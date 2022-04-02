@@ -1,0 +1,18 @@
+.card-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-dec{
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-y{
+    overflow-y: scroll;
+    height: 87vh;
+}
+.sort-btn{
+    justify-content: center;
+}

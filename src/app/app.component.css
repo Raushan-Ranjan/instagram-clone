@@ -1,0 +1,15 @@
+
+
+
+
+.decorate-line{
+    display: flex;
+    justify-content: center;
+}
+
+.hori-line{
+    background-color: grey;
+    height: 90%;
+    width: 1px;
+    margin: 5px 0px;
+}

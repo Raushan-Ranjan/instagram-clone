@@ -1,0 +1,18 @@
+.card-dec{
+    top: 10vh;
+    height: 65vh;
+    width: 64vh;
+    margin: auto;
+    align-items: center;
+}
+
+.no-card-dec{
+    margin: auto;
+    align-items: center;
+    margin: 48vh 20vh;
+}
+
+img{
+    height: 65vh;
+    width: 64vh;
+}
